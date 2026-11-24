@@ -1,0 +1,16 @@
+# Éditeurs / OS
+*~
+*.swp
+.DS_Store
+.idea/
+.vscode/
+
+# Sorties locales
+*.log
+/tests/tmp/
+/tmp/
+
+# Jeux de textures locaux : ne jamais committer de 8K
+/samples/
+*.zip
+*.7z

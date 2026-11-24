@@ -1,0 +1,4 @@
+shell=bash
+external-sources=true
+# Les tableaux associatifs et les process substitution sont volontaires ici.
+disable=SC2312

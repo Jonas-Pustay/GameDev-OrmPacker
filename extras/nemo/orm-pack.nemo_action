@@ -1,0 +1,9 @@
+[Nemo Action]
+Name=Créer les textures ORM
+Comment=Empaqueter AO / Roughness / Metalness en ORM dans ce dossier
+Exec=orm-pack-notify %P
+Quote=double
+Icon-Name=applications-graphics
+Selection=none
+Extensions=any;
+Dependencies=orm-pack-notify;

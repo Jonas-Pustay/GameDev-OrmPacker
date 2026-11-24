@@ -1,0 +1,22 @@
+name: ✨ Idée / nouvelle convention de nommage
+description: Proposer une option ou un fournisseur de textures à supporter
+labels: [enhancement]
+body:
+  - type: textarea
+    id: need
+    attributes:
+      label: Besoin
+      description: Quel est le cas d'usage concret ?
+    validations:
+      required: true
+  - type: textarea
+    id: names
+    attributes:
+      label: Exemples de noms de fichiers
+      description: Si c'est une convention de nommage, colle un `ls -1` complet.
+      render: text
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Solution envisagée
+      description: Option CLI, comportement attendu…

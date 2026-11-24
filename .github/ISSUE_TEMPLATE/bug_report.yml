@@ -1,0 +1,45 @@
+name: 🐛 Bug — texture non détectée / ORM incorrecte
+description: Le script ignore un dossier, se trompe de carte, ou produit une ORM bizarre
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: Ce qui se passe
+      description: Résultat obtenu vs résultat attendu.
+    validations:
+      required: true
+  - type: textarea
+    id: ls
+    attributes:
+      label: Contenu du dossier
+      description: Colle la sortie de `ls -1`: les noms de fichiers sont la clé du diagnostic.
+      render: text
+    validations:
+      required: true
+  - type: input
+    id: cmd
+    attributes:
+      label: Commande lancée
+      placeholder: orm-pack --dry-run
+    validations:
+      required: true
+  - type: textarea
+    id: out
+    attributes:
+      label: Sortie du terminal
+      render: shell
+  - type: input
+    id: im
+    attributes:
+      label: Version d'ImageMagick
+      description: '`magick -version | head -1` (ou `convert -version | head -1`)'
+    validations:
+      required: true
+  - type: input
+    id: os
+    attributes:
+      label: Distribution
+      placeholder: Linux Mint 22.1 / Ubuntu 24.04
+    validations:
+      required: true

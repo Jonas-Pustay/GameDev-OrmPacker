@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# Lanceur graphique : orm-pack + notification (utilisé par l'action Nemo)
+dir="${1:-$PWD}"
+out="$(orm-pack "$dir" 2>&1)"
+last="$(printf '%s\n' "$out" | tail -n 1)"
+if command -v notify-send >/dev/null 2>&1; then
+  notify-send -i applications-graphics "orm-pack" "$last"
+else
+  printf '%s\n' "$out"
+fi
